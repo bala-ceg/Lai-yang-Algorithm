@@ -1,0 +1,210 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\balaj\OneDrive\Desktop\FY_21>  ${env:PYTHONIOENCODING}='UTF-8'; ${env:PYTHONUNBUFFERED}='1'; & 'C:\python38\python.exe' 'c:\Users\balaj\.vscode\extensions\ms-python.python-2020.5.86806\pythonFiles\ptvsd_launcher.py' '--default' '--nodebug' '--client' '--host' 'localhost' '--port' '57704' 'c:\Users\balaj\OneDrive\Desktop\FY_21\DC Assignment-1 Lai-yang Algorithm.py'
+welcome to the demo of Lai-yang algorithm!
+
+Enter the No of Process (Please enter from any number from 2,3 and 4): 2
+No of Process : 2
+No of Time instance assummed for this simulation: 12
+
+Enter the Process 1 Initial value:      1000
+
+Enter the Process 2 Initial value:      2000
+Initialized Successfully at time instant t0 5units
+Total amount in INR before transacation: 3000
+
+Process 1 Initial value:         [1000    0    0    0    0    0    0    0    0    0    0    0]
+
+Process 2 Initial value:         [2000    0    0    0    0    0    0    0    0    0    0    0]
+Data [1, 0, 2]
+iteration:       1
+simulation at time instant t1 10units
+Send message from one process to another process
+
+Process 1 Initial value:         [1000 1000    0    0    0    0    0    0    0    0    0    0]
+
+Process 2 Initial value:         [2000 2000    0    0    0    0    0    0    0    0    0    0]
+sending msg from which Process we have Process [1, 2] enter integers only 1
+sending msg  to  which Process we have Process [1, 2] enter integers only 2
+enter the amount you want transfer from Process 1 to Process 2 300
+
+Process 1 Initial value:         [1000  700    0    0    0    0    0    0    0    0    0    0]
+Send array: [  0 300   0   0   0   0   0   0   0   0   0   0]
+
+Process 2 Initial value:         [2000 2000    0    0    0    0    0    0    0    0    0    0]
+Send array: [0 0 0 0 0 0 0 0 0 0 0 0]
+iteration:       2
+simulation at time instant t2 15units
+Send message from one process to another process
+
+Process 1 Initial value:         [1000  700  700    0    0    0    0    0    0    0    0    0]
+
+Process 2 Initial value:         [2000 2000 2000    0    0    0    0    0    0    0    0    0]
+sending msg from which Process we have Process [1, 2] enter integers only 2
+sending msg  to  which Process we have Process [1, 2] enter integers only 1
+enter the amount you want transfer from Process 2 to Process 1 400
+
+Process 1 Initial value:         [1000  700  700    0    0    0    0    0    0    0    0    0]
+Send array: [  0 300   0   0   0   0   0   0   0   0   0   0]
+
+Process 2 Initial value:         [2000 2000 1600    0    0    0    0    0    0    0    0    0]
+Send array: [  0   0 400   0   0   0   0   0   0   0   0   0]
+iteration:       3
+simulation at time instant t3 20units
+Send message from one process to another process
+
+Process 1 Initial value:         [1000  700  700  700    0    0    0    0    0    0    0    0]
+
+Process 2 Initial value:         [2000 2000 1600 1600    0    0    0    0    0    0    0    0]
+sending msg from which Process we have Process [1, 2] enter integers only 2
+sending msg  to  which Process we have Process [1, 2] enter integers only 1
+enter the amount you want transfer from Process 2 to Process 1 300
+
+Process 1 Initial value:         [1000  700  700  700    0    0    0    0    0    0    0    0]
+Send array: [  0 300   0   0   0   0   0   0   0   0   0   0]
+
+Process 2 Initial value:         [2000 2000 1600 1300    0    0    0    0    0    0    0    0]
+Send array: [  0   0 400 300   0   0   0   0   0   0   0   0]
+iteration:       4
+simulation at time instant t4 25units
+Recieve message from one process to another process
+Receiving queue contains more than one message at the time we can only process receive message.
+
+Process 1 Initial value:         [1000  700  700  700  700    0    0    0    0    0    0    0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300    0    0    0    0    0    0    0]
+iteration:       4
+
+Process 1 Initial value:         [1000  700  700  700 1100    0    0    0    0    0    0    0]
+
+Send Process 1 Initial value:    [  0 300   0   0   0   0   0   0   0   0   0   0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300    0    0    0    0    0    0    0]
+
+Send Process 2 Initial value:    [  0   0 400 300   0   0   0   0   0   0   0   0]
+receiving buffer not yet processed in the order of send process and receive process and amount
+iteration:       5
+simulation at time instant t5 30units
+Recieve message from one process to another process
+Receiving queue contains more than one message at the time we can only process receive message.
+
+Process 1 Initial value:         [1000  700  700  700 1100 1100    0    0    0    0    0    0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300 1300    0    0    0    0    0    0]
+iteration:       5
+
+Process 1 Initial value:         [1000  700  700  700 1100 1100    0    0    0    0    0    0]
+
+Send Process 1 Initial value:    [  0 300   0   0   0   0   0   0   0   0   0   0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300 1600    0    0    0    0    0    0]
+
+Send Process 2 Initial value:    [  0   0 400 300   0   0   0   0   0   0   0   0]
+receiving buffer not yet processed in the order of send process and receive process and amount
+iteration:       6
+simulation at time instant t6 35units
+Recieve message from one process to another process
+Receiving queue contains more than one message at the time we can only process receive message.
+
+Process 1 Initial value:         [1000  700  700  700 1100 1100 1100    0    0    0    0    0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300 1600 1600    0    0    0    0    0]
+iteration:       6
+
+Process 1 Initial value:         [1000  700  700  700 1100 1100 1400    0    0    0    0    0]
+
+Send Process 1 Initial value:    [  0 300   0   0   0   0   0   0   0   0   0   0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300 1600 1600    0    0    0    0    0]
+
+Send Process 2 Initial value:    [  0   0 400 300   0   0   0   0   0   0   0   0]
+receiving buffer not yet processed in the order of send process and receive process and amount
+iteration:       7
+simulation at time instant t7 40units
+
+ The system assumed that you don't want to anything at this particular time instant
+iteration:       7
+
+Process 1 Initial value:         [1000  700  700  700 1100 1100 1400 1400    0    0    0    0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300 1600 1600 1600    0    0    0    0]
+iteration:       8
+simulation at time instant t8 45units
+
+ The system assumed that you don't want to anything at this particular time instant
+iteration:       8
+
+Process 1 Initial value:         [1000  700  700  700 1100 1100 1400 1400 1400    0    0    0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300 1600 1600 1600 1600    0    0    0]
+iteration:       9
+simulation at time instant t9 50units
+
+ The system assumed that you don't want to anything at this particular time instant
+iteration:       9
+
+Process 1 Initial value:         [1000  700  700  700 1100 1100 1400 1400 1400 1400    0    0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300 1600 1600 1600 1600 1600    0    0]
+iteration:       10
+simulation at time instant t10 55units
+
+ The system assumed that you don't want to anything at this particular time instant
+iteration:       10
+
+Process 1 Initial value:         [1000  700  700  700 1100 1100 1400 1400 1400 1400 1400    0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300 1600 1600 1600 1600 1600 1600    0]
+iteration:       11
+simulation at time instant t11 60units
+
+ The system assumed that you don't want to anything at this particular time instant
+iteration:       11
+
+Process 1 Initial value:         [1000  700  700  700 1100 1100 1400 1400 1400 1400 1400 1400]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300 1600 1600 1600 1600 1600 1600 1600]
+
+Process 1 Initial value:         [1000  700  700  700 1100 1100 1400 1400 1400 1400 1400 1400]
+
+Send Process 1 Initial value:    [  0 300   0   0   0   0   0   0   0   0   0   0]
+
+Receive Process 1 Initial value:         [  0   0   0   0 400   0 300   0   0   0   0   0]
+
+Process 2 Initial value:         [2000 2000 1600 1300 1300 1600 1600 1600 1600 1600 1600 1600]
+
+Send Process 2 Initial value:    [  0   0 400 300   0   0   0   0   0   0   0   0]
+
+Receive Process 2 Initial value:         [  0   0   0   0   0 300   0   0   0   0   0   0]
+
+Enter the Global Snapshot time time instance:
+
+The possible time instance values are from 1 to  11
+
+please enter the value:2
+
+Process_initial_values: [1000, 2000]
+
+Process_current_state at GS initiating time: [1000, 1600]
+
+Global State Recording is Initiated by Process 1 and Process 1 turns red
+
+ Now the Process 2 turns red
+
+At Global State Time Instance T2:
+
+ total message exchange between the process: ['Message send from 1to 2 amount 300', 'Message send from 2to 1 amount 400', 'Message send from 2to 1 amount 300', 'Message receive from 2to 1 amount 400', 'Message receive from 1to 2 amount 300', 'Message receive from 2to 1 amount 300']
+
+ these are the white messages sent by the processes before P1 turning red
+['Message send from 1to 2 amount 300', 'Message send from 2to 1 amount 400']
+
+ these are the red message sent by the process:
+['Message send from 2to 1 amount 300', 'Message receive from 2to 1 amount 400', 'Message receive from 1to 2 amount 300']     
+
+Global State value: 3000
+
+Global state value preserved is matching the Total amount value
+PS C:\Users\balaj\OneDrive\Desktop\FY_21> 
